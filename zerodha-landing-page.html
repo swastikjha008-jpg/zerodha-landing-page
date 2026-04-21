@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerodha Landing Page Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Manrope", sans-serif;
+      color: #2c2c2c;
+      background: #fff;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      position: sticky;
+      top: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #387ed1;
+    }
+    .nav-links a {
+      margin-left: 24px;
+      color: #666;
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 0 50px;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      display: block;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+    .btn {
+      display: inline-block;
+      background: #387ed1;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 70px 0;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+    .section p {
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      border: 1px solid #eee;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      background: #fafafa;
+    }
+    .card h3 {
+      font-size: 28px;
+      color: #387ed1;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 70px 0;
+      background: #fafafa;
+    }
+    .cta h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .cta p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 0;
+      color: #777;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hero h1 { font-size: 30px; }
+      .grid-2, .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">ZERODHA</div>
+        <div class="nav-links">
+          <a href="#">Signup</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Pricing</a>
+          <a href="#">Support</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <img src="https://zerodha.com/static/images/landing.png" alt="Zerodha landing image">
+      <h1>Invest in everything</h1>
+      <p>Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
+      <a href="#" class="btn">Sign up now</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Trust with confidence</h2>
+        <p>Customer-first always</p>
+        <p>Simple and transparent pricing</p>
+        <p>Clean and beginner-friendly experience</p>
+        <p>Inspired by Zerodha's modern and minimal style</p>
+      </div>
+      <div>
+        <h2>Everything in one place</h2>
+        <p>Use one platform to track markets, invest easily, and learn more about trading and investing.</p>
+        <p>This project is made simple on purpose, so you can understand the code and upload it to GitHub as a beginner project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="text-align:center;">Simple pricing</h2>
+      <div class="features">
+        <div class="card">
+          <h3>0</h3>
+          <p>Free account opening</p>
+        </div>
+        <div class="card">
+          <h3>0</h3>
+          <p>Free equity delivery</p>
+        </div>
+        <div class="card">
+          <h3>20</h3>
+          <p>Intraday and F&amp;O trades</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Open a Zerodha account</h2>
+      <p>Modern platform and simple design for your beginner frontend project.</p>
+      <a href="#" class="btn">Get started</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Practice project inspired by Zerodha. Made with HTML and CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
